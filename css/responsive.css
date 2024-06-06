@@ -1,0 +1,145 @@
+@media (min-width: 1300px){
+    .container-fluid{ padding: 0 100px !important }
+}
+
+@media (max-width: 1100px){
+    .dropshadow img{ width:400px }
+    .border-circle:after{ top:0 }
+}
+
+@media (min-width: 991.98px){
+    header{ min-height: 100vh; }
+    .banner {display: flex; align-items: center; min-height: 100vh;}
+    .experience{ margin-bottom:150px }
+}
+
+@media (max-width: 991.98px){
+    .footer .btn{ margin:15px}
+    .ex_pt .img_half{top: 0%; margin-top:-20%; margin-bottom: 40px}
+    .section_heading h2, .banner_cnt h1{ font-size:5.5rem }
+    .typewritter{ font-size:3.5rem }
+    .footer h2 {font-size: 3rem;}
+    .footer .round_btn {width: 150px; height: 150px; line-height: 150px;}
+    .ractangle1, .ractangle2, .ractangle3{ width:200px }
+    .banner > img{ bottom: -20px;}
+    .bg_txt{font-size:7.5rem }
+    .banner_cnt p{ font-size:2rem }
+    .banner{ padding:100px 50px }
+    .ractangle1 {left: 60px;}
+    .burger{ padding:100px 0 }
+    .burger-t{ padding-top:100px }
+    .burger-b{ padding-bottom:100px }
+    .footer .round_btn{ margin-top: -70px; margin-right: 50px;}
+    .banner_cnt{ width:100% }
+    .experience{ margin-bottom:100px }
+    .dropshadow, .border-circle{ overflow:hidden; }
+    .dropshadow img{ width:111% }
+    .project_content h2{ font-size:2.2rem }
+    .project-meta{ flex-wrap:wrap; }
+    .project-meta > li{ width:50%;flex: 1; }
+    .project-meta > li.feature{ width:100%; }
+    .main_img img{ top:-30% }
+    .main_txt {margin-top: calc(15% + 50px);}
+    .Project_details h2 {font-size: 2.5rem; }
+    .Project_details .col-md-4 h2 {font-size: 2.2rem; }   
+}
+
+@media (min-width: 767px.98px){
+    .project1{ aspect-ratio:1 }
+    .project2{ aspect-ratio:3/2 }
+}
+
+@media (max-width: 767px){
+    .ex_pt .img_half{ margin-top: -40%; margin-bottom: 0px; position: relative;}
+    .project-meta > li{ width:100%;flex: 1; }
+    .border-circle:after{ display: none}
+    .project-meta{ display:block; gap:0px; margin-left:0px }
+    .project-meta>li{ margin-bottom:20px }
+    .ractangle1, .ractangle2, .ractangle3{  }
+    .banner_cnt p{ font-size:1.5rem }
+    .footer .btn{ padding: 10px 30px; margin: 10px}
+    .section_heading h2{font-size: 5rem; }
+    .typewritter {font-size: 3rem; }
+    .banner_cnt h1 {font-size: 4.5rem; }
+    .btn { padding: 7px 24px;}
+    .banner_cnt h6 { font-size: 1.2rem;}
+    .navbar-collapse{ background:var(--primary); padding:30px; height:100vh; }
+    .top_strip .container-fluid{ padding:0 !important }
+    header .navbar-brand{ margin-left:15px }
+    header .navbar-toggler{ margin-right:15px;  margin-top: -13px; }
+    header .fixed-top .navbar-toggler{margin-top: 0px; }
+    .navbar-toggler-icon{width: 1em !important; height: 1.2em !important;}
+    .top_strip { z-index:5 }
+    .sticky{ display:none !important }
+    .skills_points span{font-size: 2rem; }
+    .qua_exp h3{ margin-top:20px !important }
+    .inspire_quote {margin-top: 50px; }
+    .about, .skills{ overflow:hidden; }
+    .experience{ margin-bottom:50px }
+    .project_content h2 {font-size: 2.5rem;}
+    .project_banner{ margin-top:20px }
+    .ziczac_cnt img{ margin-bottom:20px }
+    .basefeature_area{ margin-top:10px !important }
+    .basefeature_area p{ margin-bottom:40px; text-align:center; }
+    .development_icon img{ margin-bottom:15px; height:72px; width:auto }
+    .bg_txt {font-size: 4rem; opacity:.07 }
+    .move_icon{ left:0%;}
+    .move_icon1{ right:0%;}
+    .stage {margin: 10px; }
+    .Project_details .col-md-4 h2{ margin-top:30px }
+    .position-relative .burger{ z-index:1 }
+    .bg_lg{ z-index:0 }
+    .project_content .text-end{text-align: left !important;}
+}
+
+@media (max-width:575.98px){
+    .bg_txt {font-size: 3rem; }
+    .banner_cnt h6 { font-size: 1rem;}
+    .ractangle1, .ractangle2, .ractangle3{ width:50px; }
+    .footer h2 span:first-child {margin-left: 50px; }
+    .footer h2 {font-size: 2.2rem; }
+    .section_heading{ margin-bottom:30px; overflow:hidden; min-height: 60px; position:relative; }
+    .section_heading h3{ width:100%; position:relative; left:0; top:20px; transform:translate(0);  margin-bottom: 0;}
+    .section_heading h2{font-size: 3.3rem; position:absolute; left:50%; top: 50% !important; margin-bottom: 0; transform: translate(-50%, -50%); top:0; width:100% }
+    .banner_cnt h1 {font-size: 4rem; }
+    .typewritter {font-size: 2.5rem; margin-bottom:30px }
+    .banner_cnt p {font-size: 1.2rem;}
+    .burger, footer{ padding:50px 0 }
+    .burger-t{ padding-top:50px }
+    .burger-b{ padding-bottom:50px }
+    .copyright .text-end {text-align: left !important; margin-top:20px }
+    .copyright ul { justify-content: flex-start; flex-wrap: wrap;}
+    .social_media{ display:none }
+    .banner {padding: 100px 0px; }
+    .ractangle1 {left: 20px;}
+    .gototop{ left: auto; right:-20px; display:none }
+    header{ min-height: 100vh; }
+    .banner {display: flex; align-items: center; min-height: 100vh;}
+    .copyright a {padding: 10px 10px 10px 0 ;}
+    .footer .round_btn { margin-right: 10px; }
+    .banner > img {left: 0; right: auto; }
+    .capabilities ul li{ width:50% }
+    .capabilities ul {flex-wrap: wrap;}
+    .skills_points span {font-size: 1.5rem; display:inline; }
+    .capability__cnt span{ font-size:1rem }
+    .capability__cnt h2{ font-size:1.5rem }
+    .capability .capability__cnt p{font-size:1.2rem }
+    .qua_exp h5{ margin-bottom:0 }
+    .capabilities {margin-top: 50px; }
+    .main_img img {top: -15%; }
+    .main_txt {margin-top: calc(15% + 20px); }
+    .Project_details h2 {font-size: 2rem; 
+    .Project_details .col-md-4 h2 {font-size: 2rem; } 
+    .basefeature{ background:transparent; padding:0 }
+    .basefeature img{ width:48px; margin-bottom:15px }
+    .development_icon span{ font-size:1.5rem; }
+    .development_icon img{ height:64px; }
+    .navigationbar .m-3{ margin: 5px !important;}
+}
+
+@media (max-width:420px){
+    .capabilities ul li{ width:100%}
+    .skills_points span {font-size: 1.2rem; }
+    .banner_cnt h1 {font-size: 3rem; }
+    .typewritter {font-size: 2rem; margin-bottom: 0}
+}
