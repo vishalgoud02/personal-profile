@@ -135,6 +135,7 @@
     .development_icon span{ font-size:1.5rem; }
     .development_icon img{ height:64px; }
     .navigationbar .m-3{ margin: 5px !important;}
+    .shift_b_100{ margin-top:50px }
 }
 
 @media (max-width:420px){
