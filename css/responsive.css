@@ -9,6 +9,7 @@
 
 @media (min-width: 991.98px){
     header{ min-height: 100vh; }
+    .page_404 header{ min-height:90px }
     .banner {display: flex; align-items: center; min-height: 100vh;}
     .experience{ margin-bottom:150px }
 }
