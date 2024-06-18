@@ -20,7 +20,8 @@
   --heading_txt: "Josefin Sans", sans-serif;
   --base_txt: "Open Sans", sans-serif;
   --blue:#0F346C;
-  --pink: #EE2761;
+/*  --pink: #EE2761;*/
+  --pink: #100e0f;
   --gray:#F0F1F1;
 }
 
@@ -251,7 +252,7 @@ box-shadow: 15px 20px 81px 11px rgba(0,0,0,0.145);}*/
 .color_palate > div{ flex-grow: 1; }
 .colorbar{ height:10px; border: 1px solid rgba(0, 0, 0, .1); margin: 5px}
 
-.bg-pink .btn-primary{ background:#fff; color:var(--primary); }
+.bg-pink .btn-primary{ background:#fff; color:var(--pink); }
 .bg-pink .btn-primary:hover{background: transparent; color: var(--white); border-color: var(--white);}
 
 .ex_pt{padding-top:20%; margin-top:10% }
