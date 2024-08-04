@@ -1,0 +1,18 @@
+footer{background: $primary_bg; color: $white; font-size: 1rem;
+	a{color: $white;}
+	.footer_area{
+		.footer_col{
+			a,p{ opacity:.5 }
+			h3{ font-size:1.125rem; margin-bottom:20px; font-weight:500 }
+			a{ padding-bottom: 10px; display: inline-block;
+				&:hover{ opacity:1 }
+			}
+		}
+	}
+	.copywrite{ margin-top: 50px;
+		.row{ border-top:1px solid rgba(255,255,255, .2); padding-top:50px; }
+		a{
+			&:hover{ opacity:.5 }
+		}
+	}
+}

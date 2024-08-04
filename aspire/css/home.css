@@ -1,0 +1,90 @@
+/*Banner*/
+.banner .text_msg {
+  text-align: center;
+  margin-bottom: 30px; }
+  .banner .text_msg h1 {
+    font-size: 4rem;
+    color: #0F0049;
+    line-height: 120%;
+    font-weight: bold; }
+.banner .product_img {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.newsletter {
+  margin-bottom: 50px; }
+  .newsletter form {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    border-radius: 50px;
+    position: relative;
+    padding: 15px;
+    margin-bottom: 20px; }
+    .newsletter form input {
+      border: none;
+      outline: none;
+      box-shadow: none; }
+    .newsletter form .btn {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      padding: 10px 15px;
+      border: 1px solid #D7163E; }
+      .newsletter form .btn:hover {
+        border-color: #0F0049; }
+  .newsletter .note {
+    font-size: .75rem; }
+    .newsletter .note span {
+      opacity: .4; }
+
+/*About*/
+.about_section {
+  background: #0A85EA;
+  color: #fff; }
+  .about_section a {
+    color: #fff; }
+    .about_section a:hover {
+      opacity: 0.5; }
+  .about_section h2 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    color: #fff; }
+  .about_section img {
+    margin-top: 50px; }
+
+/*Feature*/
+.feature_section h2 {
+  font-weight: bold;
+  margin-bottom: 10px; }
+.feature_section .feature {
+  padding: 30px;
+  background: #F6F5F8;
+  border-radius: 10px; }
+  .feature_section .feature h3 {
+    color: #0F0049;
+    font-weight: bold;
+    font-size: 2.5rem; }
+  .feature_section .feature p {
+    opacity: .5;
+    color: #0F0049;
+    font-size: .875rem;
+    margin-bottom: 0; }
+  .feature_section .feature.feature--1 .feature__img {
+    background: #93E7FE; }
+  .feature_section .feature.feature--2 .feature__img {
+    background: #FFD978; }
+  .feature_section .feature.feature--3 .feature__img {
+    background: #FAA9E4; }
+  .feature_section .feature.feature--4 .feature__img {
+    background: #FFA666; }
+  .feature_section .feature__img {
+    width: 70px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 10px;
+    margin-bottom: 20px; }
+    .feature_section .feature__img img {
+      width: 30px;
+      height: auto; }
+
+/*# sourceMappingURL=home.css.map */

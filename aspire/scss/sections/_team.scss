@@ -1,0 +1,22 @@
+.our_team{ color: $primary;text-align: center;
+	a{color: $primary;
+		&:hover{opacity: .5}
+	}
+	h2{font-size: 4rem;font-weight: bold;}
+	h3{font-weight: 500;font-size: 1.125rem;}
+	.team{margin-bottom: 30px;
+		&__img{margin-bottom: 20px;
+			img{width: 100%}
+		}
+		p{opacity: .5}
+	}
+
+	.section_heading{
+		p{color: rgba($primary,.5);	font-size: 1rem}
+	}
+}
+.join_team{display: flex;justify-content: space-between;align-items: center;gap: 80px;text-align: left; background: #F6F5F8; border: 1px solid #EAEAEA; padding: 50px 100px;border-radius: 10px;
+	a{color: $secondary;font-weight: 500}
+	h2{font-size: 1.75rem;width: 200px}
+	p{opacity: .5}
+}

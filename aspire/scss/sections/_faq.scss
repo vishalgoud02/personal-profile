@@ -1,0 +1,7 @@
+.faq_section{background: #F6F5F8;
+	.accordion-item{margin-bottom: 20px;border-bottom: 0;border-radius: 5px;overflow:hidden ;padding: 0;
+		.accordion-button {padding: 25px 20px;  border: none;outline: none;box-shadow: none;height: auto;font-size: 1.125rem;font-weight: 500;color: $primary;line-height: 120%;
+				&:after{background: url(../images/down-arrow.svg)no-repeat;  background-position: center;}
+		}	
+	}
+}

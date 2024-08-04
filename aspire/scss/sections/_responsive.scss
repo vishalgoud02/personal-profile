@@ -1,0 +1,102 @@
+@media (min-width: 1300px){
+}
+
+@media (max-width: 1200px){
+	.section_heading h2,.about_section h2,h2{font-size: 3.5rem}
+	.join_team h2,.customer_section h2 { font-size: 1.75rem !important;}
+}
+
+@media (max-width: 1100px){
+	.section_heading h2,.about_section h2,h2{font-size: 3rem !important}
+	.join_team h2,.customer_section h2 { font-size: 1.5rem !important;}
+	.burger{ padding:80px 0 }
+	.burger-t{ padding-top:80px }
+	.burger-b{ padding-bottom:80px }
+	.join_team{padding: 50px !important;}
+}
+
+@media (min-width: 991.98px){
+}
+
+@media (max-width: 991.98px){ 
+	.section_heading h2,.about_section h2,h2{font-size: 2.5rem !important}
+	.burger{ padding:50px 0 }
+	.burger-t{ padding-top:50px }
+	.burger-b{ padding-bottom:50px }
+	header .top_strip{
+		li{border-bottom: 1px solid rgba(0, 0, 0, 0.1);margin-bottom: 15px}
+		a.nav-link { padding: 15px 10px 15px 0 !important;}
+	}
+	.our_team{
+		.w-75{width: 100%! important} 
+	}	
+	.feature_section{		
+	 	.feature{margin: 15px auto;
+	  		&.h-100{height: auto !important;}
+		}
+	}
+	.footer_col{
+		.col-lg-4{margin-top: 20px}
+	}
+	.about_section{
+		h2 {margin-bottom: 20px !important;}
+		a{margin-bottom: 20px;}
+	}
+	.join_team {
+        padding: 30px !important;
+    }		
+}
+
+@media (min-width: 767px.98px){
+}
+
+@media (max-width: 767px){
+	.burger{ padding:40px 0 }
+	.burger-t{ padding-top:40px }
+	.burger-b{ padding-bottom:40px }
+	.newsletter_section .text_msg p{width: 100% !important;}
+	.join_team { display: block !important;
+		h2{margin-bottom: 20px !important}
+	}
+	.section_heading h2, .about_section h2, h2 {
+        font-size: 2rem !important;
+    }
+    .feature_section{
+    	.feature__img { width: 50px !important; line-height: 50px !important;
+    		img {width: 24px;}
+    	}
+	    .feature h3 {
+	        font-size: 1.8rem !important;
+	    }
+	}
+	.join_team,.feature_section .feature{
+        padding: 15px !important;
+    }
+	.footer_col{
+		.col-md-4{margin-bottom: 20px}
+	}
+	.copywrite{ margin-top: 30px !important;
+		.text-end{text-align: left !important;margin-top: 20px}
+	}
+	.section_heading { margin-bottom: 20px;}
+	.our_team .col-sm-3:last-child .team {margin-bottom: 0px !important; }
+	.mt-5 {margin-top: 2rem !important; }
+	header .top_strip{
+		.container {padding:15px;}
+		&.fixed-top{
+			.container {padding:0px 15px 5px 15px;}
+		}
+	}
+}
+
+@media (max-width:575.98px){
+	.burger{ padding:30px 0 }
+	.burger-t{ padding-top:30px }
+	.burger-b{ padding-bottom:30px }
+	.newsletter_section{
+		&.burger { padding: 15px !important; }
+	}
+}
+
+@media (max-width:420px){
+}

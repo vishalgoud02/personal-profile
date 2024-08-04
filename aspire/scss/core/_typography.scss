@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+// Regular
+@font-face {
+font-family: 'ProximaNova-Regular';
+font-style: normal;
+font-weight: normal;
+src: url('fonts/ProximaNova-Regular.otf');
+}
+
+// Bold
+@font-face {
+font-family: 'ProximaNova-Bold';
+font-style: normal;
+src: url('fonts/Eina01-Regular.ttf');
+}
+
+// Thin
+@font-face {
+font-family: 'ProximaNova-Thin';
+font-style: normal;
+font-weight: 300;
+src: url('fonts/ProximaNova-Thin.otf');
+}
+
+// Extrabold
+@font-face {
+font-family: 'ProximaNova-Extrabold';
+font-style: normal;
+font-weight: bold;
+src: url('fonts/ProximaNova-Extrabold.otf');
+}
+
+// Font-Family
+$font__regular:'Plus Jakarta Sans', sans-serif;
+//$font__regular:'Sen', sans-serif;
+//$font__bold: 'Sen', sans-serif;
+//$font__thin: 'Sen', sans-serif;
+//$font__extrabold: 'Sen', sans-serif;
+$font__hand: 'Shadows Into Light', cursive;
+
+$basefont-size:	1rem;

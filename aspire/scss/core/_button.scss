@@ -1,0 +1,8 @@
+.btn{ font-size:1rem;  padding:8px 15px; font-weight: 500; border:none; border-radius:60px }
+.btn.btn-lg{ padding:12px 35px;}
+.btn.btn-sm{ padding:5px 10px; font-size: .875rem}
+.btn.btn-primary{ background:$primary; color:$white; }
+.btn.btn-primary:hover{ background:$secondary; color:$white; }
+
+.btn.btn-secondary{ background:#F63A61; color:$white; }
+.btn.btn-secondary:hover{ background:$primary; color:$white; }

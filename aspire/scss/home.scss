@@ -1,0 +1,58 @@
+// abstracts
+  @import 'abstracts/mixins'; // Sass Mixins Folder
+  @import 'abstracts/variables'; // Sass Variables
+
+
+/*Banner*/
+.banner{
+  .text_msg{ text-align:center; margin-bottom: 30px;
+    h1{ font-size:4rem; color:$primary; line-height:120%; font-weight: bold; }
+  }
+  .product_img{ border-bottom:1px solid rgba(0, 0, 0, .1) ; }
+}
+.newsletter{ margin-bottom: 50px;
+  form{box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .05);background: $white; border-radius: 50px; position: relative; padding: 15px; margin-bottom: 20px;
+    input{ border:none; outline:none; box-shadow:none } 
+    .btn{ position:absolute; right:15px; top:10px; padding: 10px 15px; border: 1px solid #D7163E;
+      &:hover{border-color: $primary}
+    }
+  }
+  .note{ font-size:.75rem;
+    span{opacity:.4;}
+  }
+}
+
+/*About*/
+.about_section{ background: $info; color: $white;
+  a{color: $white;
+    &:hover{ opacity:.5 }
+  }
+  h2{ font-size:4rem; margin-bottom:40px;color:$white; }
+  img{ margin-top:50px }
+}
+
+/*Feature*/
+.feature_section{
+  h2{ font-weight: bold; margin-bottom:10px }
+  .feature{ padding:30px; background:$gray; border-radius:10px;
+    h3{ color:$primary; font-weight: bold; font-size: 2.5rem}
+    p{ opacity:.5; color:$primary; font-size: .875rem;margin-bottom: 0}
+    &.feature--1{
+      .feature__img{ background:#93E7FE }
+    }
+    &.feature--2{
+      .feature__img{ background:#FFD978 }
+    }
+    &.feature--3{
+      .feature__img{ background:#FAA9E4 }
+    }
+    &.feature--4{
+      .feature__img{ background:#FFA666 }
+    }
+    &__img{ width:70px; aspect-ratio:1/1; text-align:center; line-height:70px; border-radius: 10px; margin-bottom: 20px;
+      img{ width:30px; height:auto; }
+    }
+    &__cnt{
+    }
+  }
+}

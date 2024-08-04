@@ -1,0 +1,19 @@
+// abstracts
+	@import 'abstracts/mixins'; // Sass Mixins Folder
+	@import 'abstracts/variables'; // Sass Variables
+
+// core/
+	@import 'core/typography'; // Typography Rules
+	@import 'core/button';
+
+// layout/
+	@import 'layout/navigation'; // Navigation
+	@import 'layout/footer'; // Footer
+
+// sections/ (or blocks/)
+	@import 'sections/common';
+	@import 'sections/responsive';
+	@import 'sections/client';
+	@import 'sections/team';
+	@import 'sections/faq';
+	@import 'sections/news';
