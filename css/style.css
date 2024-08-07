@@ -168,6 +168,7 @@ footer{ background-color:var(--black); color:var(--white); padding:100px 0 }
 .qua_exp li{ border-bottom:1px solid #ddd; padding:20px 0 }
 .qua_exp li:last-child{ border-bottom:0; padding-bottom:0 }
 .qua_exp h3, .qua_exp h4{ margin:5px 0 }
+.qua_exp h5{ font-size: 1rem; }
 .qua_exp li h4 span{font-size: 14px; font-weight: 500; color: var(--vlack); opacity: .5; margin-bottom: 10px; font-family: var(--base_txt);}
 .qua_exp li h4 span.present{color: var(--primary); opacity: 1}
 .qua_exp li p{ margin-bottom:0; font-size:90% }
