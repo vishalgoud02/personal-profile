@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Biohub Home Page</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link  rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="bg-theme-primary font-basefont">
+
+    <!-- Top strip navbar open-->
+    <nav class="bg-theme-primary text-theme-gray top_strip lg:py-12 md:py-8 py-6">
+        <div class="container">
+            <div class="navbar lg:flex lg:justify-between relative">
+                <a class="navbar-brand" href="javascript:void(0)"><img src="images/biohub-logo.webp" alt="logo"></a>
+                <button class="navbar-toggler absolute right-0 top-0 block lg:hidden py-2 px-3 border border-white/10 rounded-md" type="button" data-bs-target="#mynavbar" onclick="menutoggle()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="navbar-collapse lg:flex hidden lg:relative lg:left-0 lg:top-0 lg:z-0 lg:p-0 px-4 pb-6 bg-theme-primary z-[5] w-full absolute left-0 top-[50px]" id="mynavbar">
+                    <ul class="navbar-nav ms-auto lg:flex items-center">
+                        <li class="nav-item"> <a class="nav-link active" href="javascript:void(0)">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="javascript:void(0)">Service</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="javascript:void(0)">Portfolio</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="javascript:void(0)">My Skills</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="javascript:void(0)">Testimonials</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="javascript:void(0)">Blog</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="javascript:void(0)">Contact</a> </li>
+                    </ul>
+                    <div class="flex lg:border-0 lg:pt-0 lg:mt-0 mt-2 pt-6 border-t-2 border-white/10">
+                        <a class="btn btn-secondary me-3" href="javascript:void(0)">Let's Talk</a>
+                        <a class="btn btn-primary" href="javascript:void(0)">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Top strip navbar close -->
+
+    <!-- Banner open -->
+    <header class="xl:mt-[85px] lg:mt-[48px] mb:mt-[50px] mt-[30px] lg:mb-[100px] md:mb-[80px] mb-[50px]">
+        <div class="container">
+            <div class="banner_area relative mt-10">
+                <img src="images/banner-shape.png" alt="banner" class="banner_shape">
+                <div class="flex items-center relative z-[4] mt-8">
+                    <div class="lg:w-7/12 w-full px-4">
+                        <div class="banner_cnt lg:ps-[80px] lg:pe-0 md:px-12 sm:px-8 px-6">
+                            <div class="section_heading sm:flex items-center">
+                                <span class="me-8 mb-4 sm:mb-0">Welcome To My World</span>
+                                <ul class="flex social_links">
+                                    <li><a href="#" class="text-theme-secondary hover:bg-theme-secondary/10"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="text-theme-secondary hover:bg-theme-secondary/10"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="text-theme-secondary hover:bg-theme-secondary/10"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#" class="text-theme-secondary hover:bg-theme-secondary/10"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <h1 class="text-white font-extrabold text-[2rem] sm:text-[3rem] md:text-[3.3rem] xl:text-[72px] mb-4 leading-[130%]"><span class="text-theme-secondary">I Design</span> & Build Unique Product.</h1>
+                            <div class="ms:flex block lg:mb-24 md:mb-16 mb-8 mt-[2.5rem]">
+                                <a class="btn btn-lg btn-secondary me-6 my-2" data-aos="fade-up" href="javascript:void(0)">Hi I am John Due</a>
+                                <a class="btn btn-lg btn-primary my-2" data-aos="fade-up" data-aos-delay="300" href="javascript:void(0)">Download  CV <i class="fa-solid fa-download"></i></a>
+                            </div>
+                            <a class="text-theme-gray text-link mb-4 hidden sm:inline-block" href="#bottom">Scroll Down <span class="rounded-full border border-white/10 w-[40px] aspect-square inline-block text-center pt-[8px] ms-2 ease-in-out duration-300"><i class="fa-solid fa-arrow-down text-theme-secondary text-sm"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="lg:w-5/12 px-4 hidden lg:block">
+                        <div class="text-center">
+                            <img src="images/banner-img1.webp" alt="banner-img1" class="mx-auto max-w-[100%]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Banner close -->
+
+    <!-- Services open -->
+    <section class="service_section bg-gradient-to-b from-[#1E3049]/0 to-[#1E3049] rounded-[40px] pb-[100px]">
+        <div class="container">
+            <div class="section_heading text-center">
+                <span>My Specializations Services</span>
+                <h2>What My Services</h2>
+            </div>
+
+            <div class="row flex-wrap">
+                <div class="lg:w-1/3 md:w-1/2 px-4" data-aos="fade-up-right">
+                    <div class="service_cnt relative flex items-center justify-center bg-[url('../images/service_bg.svg')] bg-no-repeat bg-left-top w-full aspect-square bg-contain 2xl:px-16 xl:px-12 px-6 xl:pt-0 pt-4 my-4">
+                        <div class="text-theme-gray text-center">
+                            <i class="fa-brands fa-wordpress-simple 2xl:text-[120px] xl:text-[100px] text-[80px]"></i>
+                            <h3 class="lg:text-[22px] text-[18px] font-bold my-5">WordPress Demo Setup</h3>
+                            <p class="font-secondaryfont">This is a fictional personal portfolio crafted as an example your actual skills, experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 px-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service_cnt relative flex items-center justify-center bg-[url('../images/service_bg.svg')] bg-no-repeat bg-left-top w-full aspect-square bg-contain 2xl:px-16 xl:px-12 px-6 xl:pt-0 pt-4 my-4">
+                        <div class="text-theme-gray text-center">
+                            <i class="fa-brands fa-react 2xl:text-[120px] xl:text-[100px] text-[80px]"></i>
+                            <h3 class="lg:text-[22px] text-[18px] font-bold my-5">React Router Dom</h3>
+                            <p class="font-secondaryfont">React encourages a declarative programming style, where developers describe the.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 px-4" data-aos="fade-up-left">
+                    <div class="service_cnt relative flex items-center justify-center bg-[url('../images/service_bg.svg')] bg-no-repeat bg-left-top w-full aspect-square bg-contain 2xl:px-16 xl:px-12 px-6 xl:pt-0 pt-4 my-4">
+                        <div class="text-theme-gray text-center">
+                            <i class="fa-brands fa-vuejs 2xl:text-[120px] xl:text-[100px] text-[80px]"></i>
+                            <h3 class="lg:text-[22px] text-[18px] font-bold my-5">What is Vue for next </h3>
+                            <p class="font-secondaryfont">It builds on top of standard HTML, CSS, and JavaScript and provides a declarative, component-based.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 px-4" data-aos="fade-up-right">
+                    <div class="service_cnt relative flex items-center justify-center bg-[url('../images/service_bg.svg')] bg-no-repeat bg-left-top w-full aspect-square bg-contain 2xl:px-16 xl:px-12 px-6 xl:pt-0 pt-4 my-4">
+                        <div class="text-theme-gray text-center">
+                            <i class="fa-brands fa-instagram 2xl:text-[120px] xl:text-[100px] text-[80px]"></i>
+                            <h3 class="lg:text-[22px] text-[18px] font-bold my-5">Photo Edit With  Adobe XD</h3>
+                            <p class="font-secondaryfont">Our online logo maker lets you generate designs perfectly suited to your business from a professionally.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 px-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service_cnt relative flex items-center justify-center bg-contain bg-[url('../images/service_bg.svg')] bg-no-repeat bg-left-top w-full aspect-square 2xl:px-16 xl:px-12 px-6 xl:pt-0 pt-4 my-4">
+                        <div class="text-theme-gray text-center">
+                            <i class="fa-brands fa-figma 2xl:text-[120px] xl:text-[100px] text-[80px]"></i>
+                            <h3 class="text-[22px] font-bold my-5">Figma Web Page Design</h3>
+                            <p class="font-secondaryfont">Figma is the leading collaborative design tool for building meaningful products. Seamlessly design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 px-4" data-aos="fade-up-left">
+                    <div class="service_cnt relative flex items-center justify-center bg-[url('../images/service_bg.svg')] bg-no-repeat bg-left-top w-full aspect-square bg-contain 2xl:px-16 xl:px-12 px-6 xl:pt-0 pt-4 my-4">
+                        <div class="text-theme-gray text-center">
+                            <i class="fa-solid fa-pen-ruler 2xl:text-[120px] xl:text-[100px] text-[80px]"></i>
+                            <h3 class="text-[22px] font-bold my-5">Photoshop Logo Design</h3>
+                            <p class="font-secondaryfont">Try it free, no obligation! Millions of customers love our logo maker. Premium logo designs created.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services close -->
+
+    <!-- Recent Work open -->
+    <section class="lg:mt-[100px] md:mt-[60px] mt-[40px]">
+        <div class="container">
+            <div class="section_heading text-center">
+                <span>My Awesome Work</span>
+                <h2>My Recent Works</h2>
+            </div>
+
+            <div>
+                <div class="tab flex justify-center flex-wrap mb-12 mt-3">
+                    <div data-aos="fade-up">
+                        <button class="tablinks btn btn-lg mx-2 active" onclick="openCity(event, 'allProjects-tab')">All Projects</button>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="150">
+                        <button class="tablinks btn btn-lg mx-2" onclick="openCity(event, 'web_design-tab')">Web Design</button>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <button class="tablinks btn btn-lg mx-2" onclick="openCity(event, 'figma-tab')">Figma Design</button>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="450">
+                        <button class="tablinks btn btn-lg mx-2" onclick="openCity(event, 'photohsop-tab')">Photoshop</button>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="600">
+                        <button class="tablinks btn btn-lg mx-2" onclick="openCity(event, 'reactjs-tab')">React js</button>
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <div id="allProjects-tab" class="tabcontent active">
+                        <div class="row flex-wrap">
+                            <div class="md-w-1/2 sm:w-1/2 p-4" data-aos="fade-up">
+                                <article class="blog_cnt">
+                                    <img src="images/blog.svg" alt="service" class="w-[100%]">
+                                    <a href="#" class="text-sm">WEB DESIGN &  DEVELOPMENT</a>
+                                    <h3 class="mt-2"><a href="#">Exploring Cutting Edge Techno Learn Shaping Tomorrow</a></h3>
+                                </article>
+                            </div>
+                            <div class="md-w-1/2 sm:w-1/2 p-4" data-aos="fade-up" data-aos-delay="300">
+                                <article class="blog_cnt">
+                                    <img src="images/blog.svg" alt="service" class="w-[100%]">
+                                    <a href="#" class="text-sm">Figma & Photoshop</a>
+                                    <h3 class="mt-2"><a href="#">With Composition API, we define a component's logic using</a></h3>
+                                </article>
+                            </div>
+                            <div class="md-w-1/2 sm:w-1/2 p-4" data-aos="fade-up" data-aos-delay="600">
+                                <article class="blog_cnt">
+                                    <img src="images/blog.svg" alt="service" class="w-[100%]">
+                                    <a href="#" class="text-sm">Photoshop & Adobe XD</a>
+                                    <h3 class="mt-2"><a href="#">Both API styles are fully capable of covering common use cases.</a></h3>
+                                </article>
+                            </div>
+                            <div class="md-w-1/2 sm:w-1/2 p-4" data-aos="fade-up" data-aos-delay="900">
+                                <article class="blog_cnt">
+                                    <img src="images/blog.svg" alt="service" class="w-[100%]">
+                                    <a href="#" class="text-sm">WEB DESIGN &  DEVELOPMENT</a>
+                                    <h3 class="mt-2"><a href="#">You don't have to commit to only one style during the learning phase.</a></h3>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="web_design-tab" class="tabcontent">
+                        <div class="row flex-wrap">
+                            <div class="md-w-1/2 sm:w-1/2 p-4" data-aos="fade-up">
+                                <article class="blog_cnt">
+                                    <img src="images/blog.svg" alt="service" class="w-[100%]">
+                                    <a href="#" class="text-sm">WEB DESIGN &  DEVELOPMENT</a>
+                                    <h3 class="mt-2"><a href="#">You don't have to commit to only one style during the learning phase.</a></h3>
+                                </article>
+                            </div>
+                            <div class="md-w-1/2 sm:w-1/2 p-4" data-aos="fade-up" data-aos-delay="300">
+                                <article class="blog_cnt">
+                                    <img src="images/blog.svg" alt="service" class="w-[100%]">
+                                    <a href="#" class="text-sm">WEB DESIGN &  DEVELOPMENT</a>
+                                    <h3 class="mt-2"><a href="#">Exploring Cutting Edge Techno Learn Shaping Tomorrow</a></h3>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="figma-tab" class="tabcontent">
+                        <div class="row flex-wrap">
+                            <div class="md-w-1/2 sm:w-1/2 p-4" data-aos="fade-up">
+                                <article class="blog_cnt">
+                                    <img src="images/blog.svg" alt="service" class="w-[100%]">
+                                    <a href="#" class="text-sm">Figma & Photoshop</a>
+                                    <h3 class="mt-2"><a href="#">With Composition API, we define a component's logic using</a></h3>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="photohsop-tab" class="tabcontent">
+                        <div class="row flex-wrap">
+                            <div class="md-w-1/2 sm:w-1/2 p-4" data-aos="fade-up">
+                                <article class="blog_cnt">
+                                    <img src="images/blog.svg" alt="service" class="w-[100%]">
+                                    <a href="#" class="text-sm">Photoshop & Adobe XD</a>
+                                    <h3 class="mt-2"><a href="#">Both API styles are fully capable of covering common use cases.</a></h3>
+                                </article>
+                            </div>
+                        </div> 
+                    </div>
+                    <div id="reactjs-tab" class="tabcontent">
+                        <div class="row flex-wrap">
+                            <div class="md-w-1/2 sm:w-1/2 p-4" data-aos="fade-up">
+                                <article class="blog_cnt">
+                                    <img src="images/blog.svg" alt="service" class="w-[100%]">
+                                    <a href="#" class="text-sm">ReactJs</a>
+                                    <h3 class="mt-2"><a href="#">Both API styles are fully capable of covering common use cases.</a></h3>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent Work close -->
+
+    <!-- Skills open -->
+    <section class="resume_section mt-[10px] bg-gradient-to-b from-[#1E3049] to-[#1E3049]/0 rounded-[40px] pt-[100px]">
+        <div class="container">
+            <div class="section_heading text-center">
+                <span>My Awesome Skills</span>
+                <h2>My Awesome Skills</h2>
+            </div>
+
+            <div class="row">
+                <div class="lg:w-2/12 md:w-1/3 w-1/2 p-4">
+                    <div class="skill_cnt">
+                        <div class="relative" data-aos="flip-left">
+                            <div class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
+                                <img src="images/figma.webp" class="mb-4 max-w-[50%] mx-auto" alt="Figma">
+                                <strong class="text-white text-[20px]">95%</strong>
+                            </div>
+                            <img src="images/skillbg.svg" class="bg" alt="skillbg">
+                            <img src="images/skillbg-hover.svg" class="bg-hover" alt="skillbg">
+                        </div>
+                        <h5 class="text-center text-white text-[18px] font-medium mt-4" data-aos="fade-up">Figma Design</h5>
+                    </div>
+                </div>
+                <div class="lg:w-2/12 md:w-1/3 w-1/2 p-4">
+                    <div class="skill_cnt">
+                        <div class="relative" data-aos="flip-left" data-aos-delay="150">
+                            <div class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
+                                <img src="images/photoshop.webp" class="mb-4 max-w-[50%] mx-auto" alt="Photoshop">
+                                <strong class="text-white text-[20px]">100%</strong>
+                            </div>
+                            <img src="images/skillbg.svg" class="bg" alt="skillbg">
+                            <img src="images/skillbg-hover.svg" class="bg-hover" alt="skillbg">
+                        </div>
+                        <h5 class="text-center text-white text-[18px] font-medium mt-4" data-aos="fade-up" data-aos-delay="175">Adobe Photoshop</h5>
+                    </div>
+                </div>
+                <div class="lg:w-2/12 md:w-1/3 w-1/2 p-4">
+                    <div class="skill_cnt">
+                        <div class="relative" data-aos="flip-left" data-aos-delay="300">
+                            <div class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
+                                <img src="images/xd.webp" class="mb-4 max-w-[50%] mx-auto" alt="xd">
+                                <strong class="text-white text-[20px]">85%</strong>
+                            </div>
+                            <img src="images/skillbg.svg" class="bg" alt="skillbg">
+                            <img src="images/skillbg-hover.svg" class="bg-hover" alt="skillbg">
+                        </div>
+                        <h5 class="text-center text-white text-[18px] font-medium mt-4" data-aos="fade-up" data-aos-delay="350">XD Design</h5>
+                    </div>
+                </div>
+                <div class="lg:w-2/12 md:w-1/3 w-1/2 p-4">
+                    <div class="skill_cnt">
+                        <div class="relative" data-aos="flip-left" data-aos-delay="450">
+                            <div class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
+                                <img src="images/illustrator.webp" class="mb-4 max-w-[50%] mx-auto" alt="Illustrator">
+                                <strong class="text-white text-[20px]">65%</strong>
+                            </div>
+                            <img src="images/skillbg.svg" class="bg" alt="skillbg">
+                            <img src="images/skillbg-hover.svg" class="bg-hover" alt="skillbg">
+                        </div>
+                        <h5 class="text-center text-white text-[18px] font-medium mt-4" data-aos="fade-up" data-aos-delay="525">Ai Generators</h5>
+                    </div>
+                </div>
+                <div class="lg:w-2/12 md:w-1/3 w-1/2 p-4">
+                    <div class="skill_cnt">
+                        <div class="relative" data-aos="flip-left" data-aos-delay="600">
+                            <div class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
+                                <img src="images/react.webp" class="mb-4 max-w-[50%] mx-auto" alt="React">
+                                <strong class="text-white text-[20px]">85%</strong>
+                            </div>
+                            <img src="images/skillbg.svg" class="bg" alt="skillbg">
+                            <img src="images/skillbg-hover.svg" class="bg-hover" alt="skillbg">
+                        </div>
+                        <h5 class="text-center text-white text-[18px] font-medium mt-4" data-aos="fade-up" data-aos-delay="700">React  Native</h5>
+                    </div>
+                </div>
+                <div class="lg:w-2/12 md:w-1/3 w-1/2 p-4">
+                    <div class="skill_cnt">
+                        <div class="relative" data-aos="flip-left" data-aos-delay="750">
+                            <div class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
+                                <img src="images/postman.webp" class="mb-4 max-w-[50%] mx-auto" alt="Postman">
+                                <strong class="text-white text-[20px]">56%</strong>
+                            </div>
+                            <img src="images/skillbg.svg" class="bg" alt="skillbg">
+                            <img src="images/skillbg-hover.svg" class="bg-hover" alt="skillbg">
+                        </div>
+                        <h5 class="text-center text-white text-[18px] font-medium mt-4" data-aos="fade-up" data-aos-delay="875">Postman Tools</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="md:w-1/2 w-full p-4 mt-5">
+                    <div class="resume_dtl relative">
+                        <div>
+                            <h3 class="md:text-[30px] text-[26px] font-bold text-theme-gray mb-10">Educational Experience</h3>
+                            <div class="text-theme-gray">
+                                <div class="border-b border-white/10 mb-3 pb-3">
+                                    <div class="flex justify-between">
+                                        <span class="text-sm font-secondaryfont">2015 - 2019</span>
+                                        <strong class="text-sm font-secondaryfont text-theme-secondary">3.50/5</strong>
+                                    </div>
+                                    <h4 class="font-bold text-[20px] my-2">BS in Computer Science of SE</h4>
+                                    <p class="font-[14px]">Undergraduate Programs</p>
+                                </div>
+                                <div class="">
+                                    <div class="flex justify-between">
+                                        <span class="text-sm font-secondaryfont">2019 - 2022</span>
+                                        <strong class="text-sm font-secondaryfont text-theme-secondary">4.60/5</strong>
+                                    </div>
+                                    <h4 class="font-bold text-[20px] my-2">BBA Major in Accounting BBA</h4>
+                                    <p class="font-[14px]">University of Uk/London</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full p-4 mt-5">
+                    <div class="resume_dtl relative">
+                        <div>
+                            <h3 class="md:text-[30px] text-[26px] font-bold text-theme-gray mb-10">Job Experience</h3>
+                            <div class="text-theme-gray">
+                                <div class="border-b border-white/10 mb-3 pb-3">
+                                    <div class="flex justify-between">
+                                        <span class="text-sm font-secondaryfont">2015 - 2019</span>
+                                        <strong class="text-sm font-secondaryfont text-theme-secondary">4 years</strong>
+                                    </div>
+                                    <h4 class="font-bold text-[20px] my-2">Google Marketing Officer</h4>
+                                    <p class="font-[14px]">United States Calefornia</p>
+                                </div>
+                                <div class="">
+                                    <div class="flex justify-between">
+                                        <span class="text-sm font-secondaryfont">2019 - 2022</span>
+                                        <strong class="text-sm font-secondaryfont text-theme-secondary">3 Years</strong>
+                                    </div>
+                                    <h4 class="font-bold text-[20px] my-2">Grameenphone Engineer</h4>
+                                    <p class="font-[14px]">United Kingdom Bradford</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills close -->
+
+    <!-- Client review open -->
+    <section class="review_section lg:mt-[100px] md:mt-[60px] mt-[40px]">
+        <div class="container-fluid">
+            <div class="row justify-between">
+                <div class="sm:w-1/2 w-full p-4">
+                    <div class="section_heading">
+                        <span>My Clients Review</span>
+                        <h2>My Clients Review</h2>
+                    </div>
+                </div>
+                <div class="xl:w-5/12 sm:w-1/2 w-full p-4">
+                    <p class="text-theme-gray text-[20px] leading-8">Throughout the project, communication with your team was seamless and efficient. I appreciated the regular updates and prompt </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="lg:w-1/3 w-full p-4"> 
+                    <div class="base md:h-full bg-[#C4C4C4] relative rounded-[12px]">
+                        <div class="bg-gradient-to-b from-[#10102B]/0 to-[#10102B] rounded-b-[11px] md:p-12 sm:p-8 p-6 w-full h-auto lg:absolute lg:left-0 lg:bottom-0">
+                            <div><span class="text-[30px] text-white font-bold">4.5</span> </div>
+                            <p class="text-theme-gray text-[12px]">Average  500+ Reviews in My portfolio.<br> This review will be impressed to You.</p>
+                            <div class="mt-3">
+                                <a href="#" class="pre rounded-full w-8 aspect-square border border-white/10 hover:bg-theme-secondary/10 text-center inline-block pt-[4px] me-2"><i class="fa-solid fa-chevron-left text-white"></i></a>
+                                <a href="#" class="next rounded-full w-8 aspect-square border border-white/10 hover:bg-theme-secondary/10 text-center inline-block pt-[4px]"><i class="fa-solid fa-chevron-right text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 w-full p-4">
+                    <!-- Swiper -->
+                    <div class="swiper clientReview">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide h-full">
+                                <div class="testimonial">
+                                    <img src="images/circle-hover.svg" alt="circle" class="hover_circle">
+                                    <div class="cnt">
+                                        <div class="flex justify-between">
+                                            <div>
+                                                <span class="xl:text-[26px] text-[20px] font-medium font-secondaryfont text-theme-gray align-middle me-2">5.0</span> 
+                                                <span class="xl:text-[20px] text-base text-[#FF9A50] align-middle">
+                                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div><img src="images/quotes.svg" class=" w-[70px]" alt="quotes"></div>
+                                        </div>
+                                        <p class="text-theme-gray leading-7 xl:mt-[130px] lg:mt-[100px] md:mt-[80px] mt-[50px]">I hope this message finds you well. I wanted to take a moment to provide some feedback on the recent project we collaborated on. Overall, I am extremely pleased with the outcome. Overall, I am extremely pleased with the outcome . </p>
+                                        <div class="flex mt-[40px]">
+                                            <div class="me-3">
+                                                <img src="images/client-1.webp" alt="client">
+                                            </div>
+                                            <div class="text-theme-gray">
+                                                <div><strong>Al Amin Bali</strong></div>
+                                                <div><span class="font-secondaryfont text-sm">Lead Manager</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-full">
+                                <div class="testimonial">
+                                    <img src="images/circle-hover.svg" alt="circle" class="hover_circle">
+                                    <div class="cnt">
+                                        <div class="flex justify-between">
+                                            <div>
+                                                <span class="xl:text-[26px] text-[20px] font-medium font-secondaryfont text-theme-gray align-middle me-2">5.0</span> 
+                                                <span class="xl:text-[20px] text-base text-[#FF9A50] align-middle">
+                                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div><img src="images/quotes.svg" class="w-[70px]" alt="quotes"></div>
+                                        </div>
+                                        <p class="text-theme-gray leading-7 xl:mt-[130px] lg:mt-[100px] md:mt-[80px] mt-[50px]">Your team demonstrated a high level of professionalism and expertise in their respective roles. From project management to technical execution, everyone involved exhibited. outcome. Overall, I am extremely pleased with the outcome .  </p>
+                                        <div class="flex mt-[40px]">
+                                            <div class="me-3">
+                                                <img src="images/client-1.webp" alt="client">
+                                            </div>
+                                            <div class="text-theme-gray">
+                                                <div><strong>Irin Pervin</strong></div>
+                                                <div><span class="font-secondaryfont text-sm">Figma Designer</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide h-full">
+                                <div class="testimonial">
+                                    <img src="images/circle-hover.svg" alt="circle" class="hover_circle">
+                                    <div class="cnt">
+                                        <div class="flex justify-between">
+                                            <div>
+                                                <span class="xl:text-[26px] text-[20px] font-medium font-secondaryfont text-theme-gray align-middle me-2">5.0</span> 
+                                                <span class="xl:text-[20px] text-base text-[#FF9A50] align-middle">
+                                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div><img src="images/quotes.svg" class=" w-[70px]" alt="quotes"></div>
+                                        </div>
+                                        <p class="text-theme-gray leading-7 xl:mt-[130px] lg:mt-[100px] md:mt-[80px] mt-[50px]">I hope this message finds you well. I wanted to take a moment to provide some feedback on the recent project we collaborated on. Overall, I am extremely pleased with the outcome. Overall, I am extremely pleased with the outcome . </p>
+                                        <div class="flex mt-[40px]">
+                                            <div class="me-3">
+                                                <img src="images/client-1.webp" alt="client">
+                                            </div>
+                                            <div class="text-theme-gray">
+                                                <div><strong>Al Amin Bali</strong></div>
+                                                <div><span class="font-secondaryfont text-sm">Lead Manager</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client review close -->
+
+    <!-- My Clients Logo open -->
+    <section class="lg:mt-[100px] md:mt-[60px] mt-[40px]">
+        <div class="container">
+            <div class="section_heading text-center">
+                <span>My Awesome Clients</span>
+                <h2>My Awesome Clients</h2>
+            </div>
+
+            <div class="row flex-wrap justify-center">
+                <div class="md:w-1/4 w-1/2 p-4" data-aos="flip-left">
+                    <a href="#" class="client_logo"> <img src="images/asana.svg" alt="asana"> </a>
+                </div>
+                <div class="md:w-1/4 w-1/2 p-4" data-aos="flip-left" data-aos-delay="100">
+                    <a href="#" class="client_logo"> <img src="images/linear.svg" alt="linear"> </a>
+                </div>
+                <div class="md:w-1/4 w-1/2 p-4" data-aos="flip-left" data-aos-delay="200">
+                    <a href="#" class="client_logo"> <img src="images/framer.svg" alt="framer"> </a>
+                </div>
+                <div class="md:w-1/4 w-1/2 p-4" data-aos="flip-left" data-aos-delay="300">
+                    <a href="#" class="client_logo"> <img src="images/notion.svg" alt="notion"> </a>
+                </div>
+                <div class="md:w-1/4 w-1/2 p-4" data-aos="flip-left" data-aos-delay="400">
+                    <a href="#" class="client_logo"> <img src="images/slack.svg" alt="slack"> </a>
+                </div>
+                <div class="md:w-1/4 w-1/2 p-4" data-aos="flip-left" data-aos-delay="500">
+                    <a href="#" class="client_logo"> <img src="images/medium.svg" alt="medium"> </a>
+                </div>
+                <div class="md:w-1/4 w-1/2 p-4" data-aos="flip-left" data-aos-delay="600">
+                    <a href="#" class="client_logo"> <img src="images/upwork.svg" alt="upwork"> </a>
+                </div>
+                <div class="md:w-1/4 w-1/2 p-4" data-aos="flip-left" data-aos-delay="700">
+                    <a href="#" class="client_logo"> <img src="images/amazon.svg" alt="amazon"> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My Clients close -->
+
+    <!-- Recent post open -->
+    <section class="lg:mt-[100px] md:mt-[60px] mt-[40px]">
+        <div class="container">
+            <div class="section_heading text-center">
+                <span>My Recent Post</span>
+                <h2>My Recent Blog</h2>
+            </div>
+
+            <div class="row flex-wrap">
+                <div class="md:w-1/2 sm:w-1/2 p-4" data-aos="fade-up">
+                    <article class="blog_cnt">
+                        <img src="images/blog.svg" alt="service" class="w-[100%]">
+                        <div class="lg:flex justify-between">
+                            <div class="tags">
+                                <a href="#" class="me-2">Tech Learn</a>
+                                <a href="#">Vue js</a>
+                            </div>
+                            <span class="text-theme-gray text-base"><i class="fa-regular fa-clock me-1"></i> <span>3min Read</span></span>
+                        </div>
+                        <h3><a href="#">Exploring Cutting Edge Techno Learn Shaping Tomorrow</a></h3>
+                    </article>
+                </div>
+                <div class="md:w-1/2 sm:w-1/2 p-4" data-aos="fade-up" data-aos-delay="300">
+                    <article class="blog_cnt">
+                        <img src="images/blog.svg" alt="service" class="w-[100%]">
+                        <div class="lg:flex justify-between">
+                            <div class="tags">
+                                <a href="#" class="me-2">Web Design</a>
+                                <a href="#">App Development</a>
+                            </div>
+                            <span class="text-theme-gray text-base"><i class="fa-regular fa-clock me-1"></i> <span>6min Read</span></span>
+                        </div>
+                        <h3><a href="#">React lets you build user interfaces out of individual pieces called</a></h3>
+                    </article>
+                </div>
+                <div class="md:w-1/2 sm:w-1/2 p-4" data-aos="fade-up" data-aos-delay="600">
+                    <article class="blog_cnt">
+                        <img src="images/blog.svg" alt="service" class="w-[100%]">
+                        <div class="lg:flex justify-between">
+                            <div class="tags">
+                                <a href="#" class="me-2">Web Design</a>
+                                <a href="#">App Development</a>
+                            </div>
+                            <span class="text-theme-gray text-base"><i class="fa-regular fa-clock me-1"></i> <span>2min Read</span></span>
+                        </div>
+                        <h3><a href="#">Whether you work on your own or with thousands of other</a></h3>
+                    </article>
+                </div>
+                <div class="md:w-1/2 sm:w-1/2 p-4" data-aos="fade-up" data-aos-delay="900">
+                    <article class="blog_cnt">
+                        <img src="images/blog.svg" alt="service" class="w-[100%]">
+                        <div class="lg:flex justify-between">
+                            <div class="tags">
+                                <a href="#" class="me-2">Graphic Design</a>
+                                <a href="#">Figma Design</a>
+                            </div>
+                            <span class="text-theme-gray text-base"><i class="fa-regular fa-clock me-1"></i> <span>3min Read</span></span>
+                        </div>
+                        <h3><a href="#">Want to show some content conditionally for react js</a></h3>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent post close -->
+
+    <!-- Contact form open -->
+    <section class="mt-[20px]">
+        <div class="container">
+            <div class="section_heading text-center">
+                <span>My Contact Information</span>
+                <h2>Contact With Me</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="lg:w-2/3 md:w-7/12 p-4 pt-10">
+                    <div class="contact_form text-white h-full lg:me-[30px] relative">
+                        <div class="form_cnt relative z-[1]">
+                            <h3 class="lg:text-[34px] md:text-[28px] text-[22px] font-bold lg:mb-8 md:mb-6 mb-4">Send me a message</h3>
+                            <form action="#">
+                                <div class="row flex-wrap">
+                                    <div class="w-1/2 p-4 mb-2">
+                                        <input type="text" class="form-control" id="nm" placeholder="Your Name" name="nm">
+                                    </div>
+                                    <div class="w-1/2 p-4 mb-2">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                                    </div>
+                                    <div class="w-full p-4 mb-2">
+                                        <input type="email" class="form-control" id="email" placeholder="Email Address" name="email">
+                                    </div>
+                                    <div class="w-full p-4 mb-2">
+                                        <input type="text" class="form-control" id="subject" placeholder="Your Subject" name="subject">
+                                    </div>
+                                    <div class="w-full p-4 mb-2">
+                                        <textarea class="form-control" id="message" rows="8" placeholder="Your Message" name="message"></textarea>
+                                    </div>
+                                    <div class="w-full p-4 mb-2">
+                                        <button type="submit" class="btn btn-primary btn-lg"><span class="me-2">Send Message</span> <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-5/12 p-4 pt-10">
+                    <div class="contact_option text-white relative h-full">
+                        <div class="contact_cnt relative z-[1]">
+                            <div class="mb-8">
+                                <img src="images/headphone.svg" alt="headphone">
+                                <h3 class="text-[20px] font-semibold text-theme-gray mt-3 mb-2">Get Support</h3>
+                                <div class="text-sm">
+                                    <p class="text-theme-gray">If you want to communicate with live please <span class="text-theme-secondary">Skype online</span> contact me.</p>
+                                    <div class="mt-3">
+                                        <div class="text-theme-gray mb-2">Phone Number: <a href="tel:01922222224">01922222224</a></div>
+                                        <div class="text-theme-gray">Phone Number: <a href="tel:01956565654">01956565654</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-8">
+                                <img src="images/headphone.svg" alt="headphone">
+                                <h3 class="text-[20px] font-semibold text-theme-gray mt-3 mb-2">Communication With Mail</h3>
+                                <div class="text-sm">
+                                    <p class="text-theme-gray">Please submit your email in my email and please as soon as possible. </p>
+                                    <div class="mt-3">
+                                        <div class="text-theme-gray">Email Address 01: <a href="mailto:admin@gmail.com">admin@gmail.com</a></div>
+                                        <div class="text-theme-gray mb-2">Email Address 02: <a href="mailto:personal@gmail.com">personal@gmail.com</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-8">
+                                <img src="images/headphone.svg" alt="headphone">
+                                <div class="text-sm">
+                                    <h3 class="text-[20px] font-semibold text-theme-gray mt-3 mb-2">Want to Chat Now?</h3>
+                                    <div class="text-theme-gray">Chat with me its more experts of find out more and more informative way to learn about me.</div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-lg"><span class="me-2">Open Chat With Me</span> <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- Contact form close -->
+
+
+    <!-- Footer open -->
+    <footer class="relative">
+        <a id="bottom" class="absolute z-0 opacity-0">&nbsp;</a>
+        <div class="container-fluid">
+            <div class="footer bg-theme-black bg-[url('../images/shape.svg')] bg-no-repeat bg-contain bg-left-top lg:mt-[100px] md:mt-[60px] mt-[40px] md:mb-[70px] mb-8 border-b-2 border-b-theme-secondary rounded-md lg:py-12 md:py-8 py-6">
+                <div class="container">
+                    <div class="newsletter bg-theme-black border border-white/10 rounded-[10px] py-12 mb-8 relative z-[1] inline-block w-full">
+                        <div class="flex justify-center items-center">
+                            <div class="xl:w-10/12 w-11/12 ">
+                                <div class="row items-center">
+                                    <div class="lg:w-1/2 w-full p-4">
+                                        <h2 class=" lg:text-[40px] md:text-[30px] text-2xl text-white font-medium leading-[130%]">Subscribe Newsletters</h2>
+                                    </div>
+                                    <div class="lg:w-1/2 w-full p-4">
+                                        <div class="newsletter__form border-2 border-[#494967]/10 p-4 rounded-[2.5rem] relative">
+                                            <input type="text" name="email" class="form-control" placeholder="Enter your email">
+                                            <button type="submit" class="btn btn-primary"><span class="me-3 hidden md:inline-block">Subscribe Me</span> <i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/shadow.svg" class="w-full h-12 absolute bottom-0 left-0 z-0" alt="shadow">
+                </div>
+                <div class="container">
+                    <div class="flex justify-center flex-wrap">                        
+                        <div class="xl:w-10/12 w-full">
+                            <div class="md:flex block items-center px-0">
+                                <div class="md:w-7/12 w-full md:py-4 py-2">
+                                    <ul class="sm:flex block gap-[13px] footer_menu">
+                                        <li><a href="#" class="block md:py-1 py-2">About us</a></li>
+                                        <li><a href="#" class="block md:py-1 py-2">Discover</a></li>
+                                        <li><a href="#" class="block md:py-1 py-2">Explore</a></li>
+                                        <li><a href="#" class="block md:py-1 py-2">Books</a></li>
+                                    </ul>
+                                </div>
+                                <div class="md:w-5/12 w-full md:py-4 py-2">
+                                    <ul class="flex md:justify-end justify-start social_links">
+                                        <li class="sm:ms-0 ms-[-10px]"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-vimeo-v"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="xl:w-10/12 w-full copywrite_section mt-2 pt-2 border-t border-[#2B3D51]/20 text-sm text-[#F8F6FD]/75">
+                            <div class="md:flex justify-between items-center">
+                                <div class="sm:py-4 py-2">
+                                    <div class="text-[#F8F6FD]/75">&copy; 2024 <a href="#" class="text-[#F8F6FD]/75 hover:text-theme-gray">Themes-Park</a> All rights reserved.</div>
+                                </div>
+                                <div class="hidden md:block text-center py-4">
+                                    <a href="#" class="text-[#F8F6FD]/75 hover:text-theme-gray"><img src="images/biohub-logo.webp" alt="logo"></a> 
+                                </div>
+                                <div class="md:text-right sm:py-4 py-2">
+                                    <a href="#" class="text-[#F8F6FD]/75 hover:text-theme-gray lg:me-8 me-4">Terms of Service</a>
+                                    <a href="#" class="text-[#F8F6FD]/75 hover:text-theme-gray">Privacy Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer close -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        AOS.init();
+
+        var swiper = new Swiper(".clientReview", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            // pagination: {
+            //   el: ".swiper-pagination",
+            //   clickable: true,
+            // },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                }
+            },
+        });
+
+        // Tabs
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                //tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            //document.getElementById(cityName).style.display = "block";
+            document.getElementById(cityName).classList.add("active");
+            evt.currentTarget.className += " active";
+        }
+        function menutoggle() {
+            var x = document.getElementById("mynavbar");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            x.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
+
+

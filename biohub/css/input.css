@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html {scroll-behavior: smooth; @apply font-basefont}
+    p{@apply font-secondaryfont font-normal text-base}
+    a{ @apply inline-block align-middle}
+}
+
+@layer components{
+    a, .btn{@apply ease-in-out duration-300}
+    .btn{ @apply text-center font-medium inline-block align-middle rounded-full font-basefont text-base border-2 pt-[5px] pb-[5px] px-[23px] leading-[170%]}
+    .btn.btn-lg{@apply py-[9px] px-[25px]}
+    .btn.btn-primary{ @apply bg-theme-secondary text-theme-dark border-transparent hover:bg-transparent hover:text-theme-secondary hover:border-white/10}
+    .btn.btn-secondary{ @apply bg-transparent text-theme-secondary border-white/10 hover:bg-theme-secondary hover:text-theme-dark hover:border-transparent}
+}
+
+@layer utilities{
+}
+
+.container{@apply mx-auto px-4 }
+.container, .container-fluid{@apply relative}
+.row{@apply relative flex flex-wrap ms-[-16px] me-[-16px]}
+
+/* Header */
+.top_strip .nav-item .nav-link{@apply text-theme-gray block py-2 mx-2 lg:mx-4 text-[14px] relative overflow-hidden}
+.top_strip .nav-item .nav-link:after{content: ''; transform: translateX(-50%); @apply absolute bottom-0 left-[50%] w-0 h-[1px] bg-gradient-to-r from-[#090925] via-[#93F2FF] to-[#090925] ease-in-out duration-300}
+.top_strip .nav-item .nav-link:hover, .top_strip .nav-item .nav-link.active{@apply text-theme-secondary}
+.top_strip .nav-item .nav-link.active:after, .top_strip .nav-item .nav-link:hover:after{@apply w-full h-[1px]}
+
+.navbar-toggler path{@apply fill-white}
+
+/* Banner */
+.banner_area{@apply bg-theme-black border-[2px] border-white/10 rounded-xl relative}
+.banner_area .section_heading{@apply mb-3}
+.banner_area:before, .banner_area:after{content :''; @apply absolute}
+.banner_area:before{ background-size: 55% auto; @apply bottom-0 right-0 bg-[url('../images/bannerr-glow.svg')] bg-no-repeat bg-right-bottom z-0 w-full h-full}
+.banner_area:after{ background-size: 80% auto; @apply bottom-0 left-0 bg-[url('../images/texture.svg')] bg-no-repeat bg-left-bottom z-0 w-full h-full}
+.banner_shape{@apply right-[-2px] top-[-45px] absolute}
+.banner_area .social_links a{@apply border-2 border-white/10 text-center pt-[8px] rounded-full inline-block me-2 w-[40px] aspect-square text-[16px]}
+.banner_area .btn{@apply py-4 px-8}
+.text-link:hover span{@apply bg-theme-secondary/10}
+
+/* heading */
+.section_heading{ @apply mb-12}
+.section_heading span{@apply text-theme-secondary inline-block font-bold text-base relative py-3}
+.section_heading span:after, .section_heading span:before{ content: ''; @apply w-[7px] h-[30px] inline-block align-middle}
+.section_heading span:after{@apply bg-[url('../images/block-right.svg')] bg-no-repeat bg-right-top ms-2}
+.section_heading span:before{@apply bg-[url('../images/block-left.svg')] bg-no-repeat bg-left-top me-2}
+.section_heading h2{@apply text-theme-gray font-bold text-[48px] }
+
+/* Style the tab */
+.tablinks{@apply border-2 border-white/10 text-theme-gray text-[18px]}
+.tablinks.btn.btn-lg{@apply px-[35px] py-[12px] my-2 ease-in-out duration-300}
+.tab button.active, .tab button:hover { @apply text-theme-primary bg-theme-secondary}
+  /* Style the tab content */
+.tabcontent {@apply hidden}
+.tabcontent.active{@apply block}
+
+
+.client_logo{@apply px-8 lg:py-[40px] md:py-[30px] py-[20px] text-center relative bg-gradient-to-b from-white/10 to-white/0 block rounded-md h-full}
+.client_logo:after{content: ''; width: calc(100% - 4px); height: calc(100% - 4px); @apply bg-theme-black absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-0 rounded-md}
+.client_logo img{ @apply relative z-[1] ease-in-out duration-300 mx-auto}
+.client_logo:hover img{ @apply opacity-40}
+
+.testimonial{@apply relative bg-gradient-to-b from-white/10 to-white/0 md:ps-12 sm:ps-8 ps-6 pe-[30px] pt-[70px] pb-12 rounded-[12px] h-full}
+.testimonial:after{content: ''; width: calc(100% - 4px); height: calc(100% - 4px); @apply bg-theme-black absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-0 rounded-[10px]}
+.testimonial:before{content: ''; @apply w-[75px] aspect-square absolute right-0 top-0 bg-[url('../images/crop_1.png')] bg-no-repeat z-[2]}
+.testimonial .cnt{ @apply relative z-[3]}
+.clientReview .swiper-button-prev, .clientReview .swiper-button-next{ @apply opacity-0}
+.hover_circle{@apply absolute right-0 bottom-0 w-full z-[2] opacity-0 ease-in-out duration-300}
+.testimonial:hover .hover_circle{@apply opacity-100}
+
+/* .resume_dtl > div{ transform: translate(-50%, -50%); @apply absolute left-[50%] top-[50%] w-[85%]} */
+
+.skill_cnt{ @apply block cursor-pointer}
+.skill_cnt:hover h5{ @apply text-theme-secondary}
+.skill_cnt .bg, .skill_cnt .bg-hover{ @apply w-full}
+.skill_cnt:hover .bg, .skill_cnt .bg-hover{ @apply hidden}
+.skill_cnt:hover .bg-hover{ @apply block}
+
+/* Blog */
+.blog_cnt{@apply lg:mb-16 md:mb-12 mb-6}
+.blog_cnt a{@apply text-theme-gray}
+.blog_cnt a:hover{@apply text-theme-secondary}
+.blog_cnt h3{@apply text-[34px] font-bold}
+.blog_cnt img{ @apply mb-7}
+.tags{@apply mb-6}
+.tags a{@apply border border-white/10 font-medium px-4 py-1 rounded-[20px] text-[12px]}
+.tags a:hover{@apply opacity-60}
+.tags a:nth-child(odd){@apply bg-theme-secondary/10 text-theme-secondary}
+.tags a:nth-child(even){@apply bg-theme-purple/10 text-theme-purple}
+
+.form-control{@apply border border-white/10 bg-[#0C0C22] w-full text-sm rounded-[8px] px-4 py-3 text-theme-gray}
+
+.contact_form, .contact_option, .resume_dtl{@apply bg-theme-black border border-white/10 rounded-[12px]}
+.contact_form:before{content: ''; @apply w-[170px] h-[50px] absolute left-[-1px] top-[-40px] bg-[url('../images/form_shap.png')] bg-no-repeat z-[2]}
+.form_cnt, .contact_option{@apply pt-[60px] px-[40px] pb-[30px] }
+.contact_option:before{content: ''; @apply w-[75px] aspect-square absolute right-[-1px] top-[-1px] bg-[url('../images/crop_1.png')] bg-no-repeat z-[2]}
+
+.resume_dtl{@apply lg:p-[50px] md:p-[30px] p-[20px] mt-[40px] h-full bg-[url('../images/skill-bg.svg')] bg-no-repeat bg-center}
+.resume_dtl:before{content: ''; @apply w-[170px] h-[50px] absolute left-[-1px] top-[-40px] bg-[url('../images/form_shap.png')] bg-no-repeat z-[2]}
+
+/* Footer */
+.newsletter__form .form-control{@apply bg-inherit border-transparent outline-none}
+.newsletter__form .btn{ @apply absolute top-[1rem] right-[1rem] py-[10px]}
+.social_links a{@apply w-[40px] text-[24px] aspect-square text-center inline-block align-middle pt-[7px]}
+.footer_menu a{@apply text-sm font-medium uppercase pe-4}
+.footer a{@apply text-[#F8F6FD]}
+.social_links a:hover, .footer a:hover{@apply text-theme-secondary}
+
+
+@media (max-width: 768px) { 
+    .section_heading h2{@apply text-[26px]}
+    .blog_cnt h3{@apply text-[24px]}
+}
+@media (max-width: 768px) {
+    .section_heading span{@apply text-sm}
+    .section_heading h2{@apply text-[30px]}
+    .review_section .section_heading{@apply mb-0}
+}
+
+@media (max-width: 1024px) {
+    .container-fluid{@apply mx-[15px]}
+    .top_strip .nav-item .nav-link:after{@apply hidden}
+    .btn.btn-lg{@apply py-[7px] px-[20px]}  
+    .tablinks.btn.btn-lg{@apply text-base py-[5px] px-[15px]}  
+    .form_cnt, .contact_option{@apply pt-[40px] px-[20px] pb-[20px] }
+    /* .row{@apply mx-[0]} */
+    .tags{@apply mb-4}
+}
+
+@media (min-width: 1024px) {
+    .section_heading h2{@apply text-[36px]}
+    .blog_cnt h3{@apply text-[28px]}
+}
+
+
+@media (min-width: 1280px) {
+    .container-fluid{@apply mx-[30px]} 
+}
+
+@media (min-width: 1536px) {
+    .container { @apply w-[1350px]; }
+    .container-fluid{@apply mx-[100px]}
+    .top_strip{@apply py-12}
+}
