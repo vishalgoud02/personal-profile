@@ -52,7 +52,8 @@ input:checked + .slider:before{-webkit-transform:translateX(46px);-ms-transform:
 .slider.round:before{border-radius:50%}
 
 header{ position:absolute; top:0; left:0; width:100%; z-index:1; }
-.top_strip{ background:var(--dark); color:var(--white);}
+.top_strip{ background:var(--dark) !important; color:var(--white);}
+.top_strip .bg-dark{ background:var(--dark) !important;}
 .menu_2{ padding:50px 0 0}
 .navbar-brand{ font-size:18px }
 .navbar-brand img{ width:200px; height:auto; }

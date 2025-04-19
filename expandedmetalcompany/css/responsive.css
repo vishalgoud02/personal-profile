@@ -68,6 +68,11 @@
   .btn{ padding: 8px 25px;}
   .metal-applications ul li a span{ min-width:100%; display:inline-block; }
   .navbar-brand img {width: 160px;}
+  .megamenu_cnt{ height: calc(100vh - 130px); overflow: auto; border-bottom: 1px solid #999;}
+  .megamenu_cnt .col{ flex: 1 0 50%; }
+  .megamenu_container h3{ margin-bottom:20px !important }
+  .menu_2.add_bg{ position:relative; }
+  .menu_2.add_bg:after{ content:''; width:100%; height:20px; background:var(--primary);display: block; position: absolute; }
 }
 
 @media (max-width: 576px) {
@@ -76,8 +81,10 @@
   .navbar-brand img {width: 140px;}
   .search_bar input {top: 50px; padding:7px 0}
   .search_bar:hover input {top: 50px; padding: 7px 10px; width: calc(100vw - 1.5rem);}
-  .banner_section{ top: 45px; background: var(--black);height: 45vh;}
+  .banner_section{ top: 45px; background: var(--dark);height: 45vh;}
   .banner_section img{ opacity:.7 }
   .banner_section img { height: 100%; }
   .megamenu_container  .btn {padding: 5px 20px; }
+  .megamenu_cnt .row{ display:block !important; }
+  .megamenu_cnt .col{ width:100% !important }
 }
