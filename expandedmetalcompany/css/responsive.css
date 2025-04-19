@@ -68,6 +68,7 @@
   .navbar-brand img {width: 160px;}
   .search_bar input {top: 50px; padding:7px 0}
   .search_bar:hover input {top: 50px; padding: 7px 10px; width: calc(100vw - 1.5rem);}
-  .banner_section{ top: 45px; background: var(--black);}
+  .banner_section{ top: 45px; background: var(--black);height: 45vh;}
   .banner_section img{ opacity:.7 }
+  .banner_section img { height: 100%; }
 }
