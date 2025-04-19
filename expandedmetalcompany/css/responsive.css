@@ -40,6 +40,13 @@
   .solution_dtl.half:first-child, .solution_dtl.full, .solution_dtl.half{ margin-bottom: 20px !important}
   .menu_2 {padding: 30px 0 0; }
   .megamenu_container:hover .megamenu_cnt:before{ height:30px; margin-top: -1px; }
+  .top_strip .navbar-collapse{ text-align:left; }
+  .top_strip ul{border-top:1px solid rgba(255,255,255, .1); margin-top: 30px}
+  .top_strip ul li{ width:100%; border-bottom:1px solid rgba(255,255,255, .1); margin-bottom:10px; padding-bottom:10px }
+  .top_strip ul li a{ padding:10px 0 !important }
+  .top_strip ul.align-items-center {align-items: start !important; margin-bottom: 30px}
+  .top_strip li .btn{ margin-top: 10px; padding:10px 20px !important; margin-bottom:10px }
+  .right_action{ margin-bottom:30px }
 }
 
 @media (max-width: 768px) {
@@ -60,15 +67,17 @@
   .search_bar:hover input{width: 100%; right: 0}
   .btn{ padding: 8px 25px;}
   .metal-applications ul li a span{ min-width:100%; display:inline-block; }
+  .navbar-brand img {width: 160px;}
 }
 
 @media (max-width: 576px) {
   .section_divider.first{ border:none }
   .section_divider{ border:0; padding:0; margin-top:30px }
-  .navbar-brand img {width: 160px;}
+  .navbar-brand img {width: 140px;}
   .search_bar input {top: 50px; padding:7px 0}
   .search_bar:hover input {top: 50px; padding: 7px 10px; width: calc(100vw - 1.5rem);}
   .banner_section{ top: 45px; background: var(--black);height: 45vh;}
   .banner_section img{ opacity:.7 }
   .banner_section img { height: 100%; }
+  .megamenu_container  .btn {padding: 5px 20px; }
 }
