@@ -34,12 +34,19 @@
     <div class="top_strip text-white">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Metal Solutions Since 1889 
-              <!-- <img src="images/emc-logo.png" alt="Metal Solutions Since 1889" /> -->
+          <a class="navbar-brand" href="#">
+            <span class="d-none d-lg-block">Metal Solutions Since 1889 </span>
+            <img src="images/emc-logo.png" alt="Metal Solutions Since 1889" class="d-block d-lg-none" />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="d-flex gap-2 align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-block d-lg-none">
+              <a href="#"><img src="images/cart.png" class="me-3" alt="cart" /></a>
+              <a href="#"><img src="images/user_account_profil.png" alt="user account" /></a>
+            </div>
+          </div>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ms-auto align-items-center">
               <li class="nav-item">
@@ -55,7 +62,7 @@
                 <a class="nav-link" href="#">Resources</a>
               </li> 
               <li class="nav-item">
-                <a class="btn btn-primary ms-4" href="#">Contact Us</a>
+                <a class="btn btn-primary ms-xl-4 ms-3" href="#">Contact Us</a>
               </li>   
             </ul>
             <div class="d-flex align-items-center ms-4 right_action">
@@ -75,10 +82,12 @@
     <div class="menu_2">
       <div class="container">
         <div class="d-flex align-items-center">
-          <a class="navbar-brand me-5" href="#"> 
-            <img src="images/emc-logo.png" alt="Metal Solutions Since 1889" />
-          </a>
-          <div class="ms-4 d-flex align-items-center gap-3">
+          <div class="d-none d-lg-block">
+            <a class="navbar-brand me-xl-5 me-3" href="#"> 
+              <img src="images/emc-logo.png" alt="Metal Solutions Since 1889" />
+            </a>
+          </div>
+          <div class="ms-md-4 d-flex align-items-center gap-3">
             <span class="text-white">Shop by</span>
             <div class="megamenu_container">
               <a class="btn btn-primary">Metal</a>
@@ -134,6 +143,7 @@
                         </ul>
                       </div>
                       <div class="col">
+                        <h3>Fabrication</h3>
                       </div>
                       <div class="col">
                         <h3>Resources</h3>
@@ -166,8 +176,10 @@
               <input type="text" name="" placeholder="Search" />
               <span><i class="fas fa-search"></i></span>
             </div>
-            <a href="#"><img src="images/cart.png" alt="cart" /></a>
-            <a href="#"><img src="images/user_account_profil.png" alt="user account" /></a>
+            <div class="d-none d-lg-block">
+              <a href="#"><img src="images/cart.png" alt="cart" class="me-3" /></a>
+              <a href="#"><img src="images/user_account_profil.png" alt="user account" /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -183,15 +195,15 @@
   <section class="metal-applications gutter bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4 col-sm-12">
           <div class="hero_section h-100">
             <div class="align-self-center">
               <p class="mb-0">The Expanded Metal Company is a world-renowned manufacturer of expanded metal mesh solutions – including metal mesh sheets, mesh panels and bespoke products. </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up">
-          <div class="section_divider">
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+          <div class="section_divider first">
             <h3 class="mb-4">Metal</h3>
             <p class="mb-4">Our steel meshes are made from a variety of material grades. The most common grades are hot rolled, cold reduced, electro zinc tinplate and galvanised steel.</p>
             <ul>
@@ -205,8 +217,8 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="section_divider">
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="section_divider second">
             <h3 class="mb-4">Applications</h3>
             <p class="mb-4">Our expanded metal is used across various applications, including security fencing, walkways, facades, and industrial platforms— offering strength, safety, and versatility. </p>
             <ul>
@@ -229,7 +241,7 @@
 
   <!-- Video Section -->
   <section class="video_section" data-aos="fade-up">
-    <a href="#"><img src="images/video.webp" alt="video" /></a>
+    <button class="video_trigger" data-bs-toggle="modal" data-bs-target="#videotrigger"><img src="images/video.webp" alt="video" /></button>
     <img src="images/video-img.webp" alt="video-img" />
   </section>
 
@@ -295,7 +307,7 @@
     <div class="container">
       <h3 class="text-center mb-5">Trusted By Industries Worldwide For Durability, Design, And Quality</h3>
       <div class="row">
-        <div class="col-md-4 mb-3">
+        <div class="col-lg-4 col-md-12 mb-3">
           <div class="solution_dtl full" data-aos="flip-left">
             <h4>Engineering</h4>
             <div class="link">
@@ -305,7 +317,7 @@
             <img src="images/img-6.webp" alt="img-1" class="img-fluid" />
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-lg-4 col-md-6 mb-3">
           <div class="solution_dtl half" data-aos="flip-left" data-aos-delay="100">
             <h4>Filtration</h4>
             <div class="link">
@@ -323,7 +335,7 @@
             <img src="images/img-8.webp" alt="img-1" class="img-fluid" />
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-lg-4 col-md-6 mb-3">
           <div class="solution_dtl half" data-aos="flip-left" data-aos-delay="200">
             <h4>Security & Defence</h4>
             <div class="link">
@@ -350,13 +362,13 @@
   <section class="explainsection text-white gutter" data-aos="fade-up">
     <div class="container">
       <div class="row align-items-end">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h3 class="mb-5">Premium Finishing For<br /> Expanded Metal Mesh</h3>
           <p>Enhance durability and aesthetics with our protective and decorative coatings. Ideal for cladding, architectural features, fencing, walkways, filters, and more, our finishes ensure lasting quality and performance.</p>
         </div>
-        <div class="col-sm-6 text-md-end">
-          <a href="#" class="btn btn-primary me-3">Shop Now</a>
-          <a href="#" class="btn btn-secondary">More Information</a>  
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="btn btn-primary m-2">Shop Now</a>
+          <a href="#" class="btn btn-secondary m-2">More Information</a>  
         </div>
       </div>
     </div>
@@ -366,15 +378,15 @@
   <section class="highlight py-5 text-white" data-aos="fade-up">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <h4>Durability & Protection </h4>
           <p>Our finishes enhance strength, corrosion resistance, and weatherproofing, ensuring long-lasting performance in tough environments.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <h4>Aesthetic Appeal</h4>
           <p>Choose from a range of colors, textures, and finishes to achieve a sleek, professional look for any application.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <h4>Versatile Applications</h4>
           <p>Ideal for cladding, fencing, walkways, and more, our tailored coatings meet diverse industry needs with superior quality</p>
         </div>
@@ -387,8 +399,8 @@
     <div class="container">
       <h3 class="text-center mb-5">Excellence Guaranteed</h3>
       <div class="row align-items-center">
-        <div class="col-md-4">
-          <div class="me-5">
+        <div class="col-md-4 col-sm-6">
+          <div class="me-md-5">
             <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h4 class="mb-3">Quality Assured</h4>  
               <p>We uphold the highest standards in every production stage, ensuring precision, consistency, and reliability in our expanded metal solutions.</p>
@@ -399,11 +411,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-none d-md-block">
           <img src="images/img-12.webp" alt="img-12" class="img-fluid" data-aos="zoom-in" data-aos-delay="500" />
         </div>
-        <div class="col-md-4">
-          <div class="ms-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-4 col-sm-6">
+          <div class="ms-md-5" data-aos="fade-up" data-aos-delay="200">
             <div class="mb-5">
               <h4 class="mb-3">Precision Engineering </h4>  
               <p>Our skilled team leverages advanced techniques and decades of expertise to produce high-quality, reliable metal mesh solutions.</p>
@@ -424,7 +436,7 @@
     <div class="container">
       <h3 class="text-center mb-5">Innovation & Insights: Latest from The Expanded Metal Company</h3>
       <div class="row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4">
           <div class="solution_dtl full">
             <a href="#" class="btn btn-light btn-sm topleft">News</a>
             <div class="cnt">
@@ -433,7 +445,7 @@
             <img src="images/img-13.webp" alt="img-1" class="img-fluid" />
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4">
           <div class="solution_dtl half" data-aos="flip-left" data-aos-delay="100">
             <a href="#" class="btn btn-light btn-sm topleft">News</a>
             <div class="cnt">
@@ -449,7 +461,7 @@
             <img src="images/img-15.webp" alt="img-1" class="img-fluid" />
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4">
           <div class="solution_dtl half" data-aos="flip-left" data-aos-delay="200">
             <a href="#" class="btn btn-light btn-sm topleft">News</a>
             <div class="cnt">
@@ -473,7 +485,7 @@
   <!-- Brochure Download -->
   <section class="brochure gutter" data-aos="fade-up">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-6">
           <h4 class="mb-5">Download Our Expanded Metal Brochure</h4>
           <p>Discover the strength, versatility, and applications of our high-quality expanded metal products. Enter your email below, and we’ll send you our latest brochure in PDF format. Learn more about our range of expanded metal solutions, including materials, specifications, and custom fabrication options to meet your project needs.</p>
@@ -506,7 +518,7 @@
   <footer class="gutter footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-6">
           <div>
             <h2>Address</h2>
             <p>The Expanded Metal Company Ltd, Stranton Works, Greatham Street, Longhill Industrial Estate North, Hartlepool, TS25 1PU, United Kingdom </p>
@@ -532,8 +544,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
+        <div class="col-lg-5 offset-lg-2 col-md-6">
           <form class="mb-5 subscribe">
             <div class="mb-5">
               <input type="text" placeholder="Enter your email address" />
@@ -552,7 +563,7 @@
           </form>
           <div>
             <div class="mb-5">
-              <ul class="d-flex align-items-center gap-2">
+              <ul class="d-flex align-items-center flex-wrap gap-2">
                 <li> <a href="#" target="_blank"> <img src="images/secure-payment.webp" alt="secure payment logo" /> </a> </li>
                 <li> <a href="#" target="_blank"> <img src="images/apple-pay.png" alt="apple pay logo" /> </a> </li>
                 <li> <a href="#" target="_blank"> <img src="images/paypal_card.png" alt="paypal credit logo" /> </a> </li>
@@ -570,6 +581,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="videotrigger" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="images/delete-sign.webp" alt="delete-sign" /></button>
+          <video width="320" height="240" controls autoplay>
+            <source src="images/dummy-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -605,7 +629,7 @@
           slidesPerView: 3,
           spaceBetween: 30,
         },
-        1024: {
+        1200: {
           slidesPerView: 4,
           spaceBetween: 30,
         },
