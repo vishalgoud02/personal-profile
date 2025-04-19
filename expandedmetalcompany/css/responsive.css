@@ -1,13 +1,73 @@
 /* Custom Styles for Expanded Metal Company Website */
 
 /* Responsive */
-@media (max-width: 768px) {
-  .section-title {font-size: 1.5rem; } 
-  .subheading {font-size: 1rem; }
+
+@media (max-width: 1300px) {
+  .top_strip .nav-link {padding-left: 10px !important; padding-right: 10px !important; }
+  .solution_dtl a.btn{ padding: 8px 25px }
+  .solution_dtl .link a.btn {padding: 8px 20px;}
+  .solution_dtl .link a{ margin:5px }
 }
-  
+
 @media (min-width: 1200px) {
   .h3, h3 {font-size: 2rem;  font-weight:400 }
   .h4, h4 {font-size: 20px; font-weight:400 }
   .container-fluid{ padding-left:50px !important; padding-right:50px !important }
+}
+
+@media (max-width: 1200px) {
+  .gutter{padding: 80px 0}
+  .gutter-t{padding-top: 80px}
+  .gutter-b{padding-bottom: 80px}
+  .innovation .solution_dtl h4{ top: 30%; }
+}
+
+@media (max-width: 1100px) {
+  .solution_dtl a.btn {padding: 8px 20px; }
+  .banner_section{ min-height:auto }
+  .banner_section img {width: 100%;}
+  .menu_2 .container{max-width: 90%;}
+}
+
+@media (max-width: 992px) {
+  .section_divider.first{ border:none; padding-left: 0px; }
+  .hero_section{ padding-right:0; margin-bottom:50px }
+  .gutter{padding: 50px 0}
+  .gutter-t{padding-top: 50px}
+  .gutter-b{padding-bottom: 50px}
+  .mb-5 {margin-bottom: 2.5rem !important; }
+  .solution_dtl.full, .solution_dtl.half{ aspect-ratio:1/.559;}
+  .solution_dtl.half:first-child, .solution_dtl.full, .solution_dtl.half{ margin-bottom: 20px !important}
+  .menu_2 {padding: 30px 0 0; }
+  .megamenu_container:hover .megamenu_cnt:before{ height:30px; margin-top: -1px; }
+}
+
+@media (max-width: 768px) {
+  .section-title {font-size: 1.5rem; } 
+  .subheading {font-size: 1rem; }
+  /*.gutter{padding: 40px 0}
+  .gutter-t{padding-top: 40px}
+  .gutter-b{padding-bottom: 40px}*/
+  .mb-5 {margin-bottom: 2rem !important; }
+  .social_media{ margin-bottom:30px }
+  .menu_2 {padding: 20px 0 0; }
+  .megamenu_container:hover .megamenu_cnt:before{ height:20px; margin-top: -1px; }
+  .search_bar{background: transparent; height: 43px; width: 43px; transition:.5s ease all;}
+  .search_bar:hover{ width:auto }
+  .search_bar span{ width: 40px; height: 40px; background: var(--white); border-radius: 100%; text-align: center; line-height: 40px; right: 0; top: 0; transform: translateY(0);}
+  .menu_2 .container{ max-width:100% }
+  .search_bar input{ background:var(--white); border-radius:46px; transition:.5s ease all; width: 0; right:10px; top: 0; position:absolute; }
+  .search_bar:hover input{width: 100%; right: 0}
+  .btn{ padding: 8px 25px;}
+  .metal-applications ul li a span{ min-width:100%; display:inline-block; }
+}
+
+@media (max-width: 576px) {
+  .section_divider.first{ border:none }
+  .section_divider{ border:0; padding:0; margin-top:30px }
+  .navbar-brand img {width: 160px;}
+  .search_bar input {top: 50px; padding:7px 0}
+  .search_bar:hover input {top: 50px; padding: 7px 10px; width: calc(100vw - 1.5rem);}
+  .banner_section{ top: 45px; background: var(--black);}
+  .banner_section img{ opacity:.7 }
 }
