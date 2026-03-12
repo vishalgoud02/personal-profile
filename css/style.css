@@ -60,7 +60,6 @@ header .navbar .nav-link{ font-size:1.125rem; font-family:  var(--heading_txt); 
 .top_strip.fixed-top .navbar-brand img{ width: 100px;}
 .top_strip .btn-dark{ transition: .5s all ease;}
 .top_strip.fixed-top .btn-dark{padding: 10px 25px !important; font-size: .9rem !important}
-.navbar-nav .nav-link{}
 .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover{ color:var(--white); opacity:.7 }
 
 .banner, .banner_cnt{ position:relative; z-index:2 }
@@ -100,7 +99,7 @@ header .navbar .nav-link{ font-size:1.125rem; font-family:  var(--heading_txt); 
 .section_heading{ position:relative; }
 .section_heading h2{ color:var(--black); font-family: var(--base_txt) !important; font-weight: 800; opacity:.03; font-size:7.5rem; text-transform:uppercase; }
 .section_heading h3{color:var(--primary); font-size:1.5rem; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
-p{ font-size:1.2rem; opacity:.5; font-family:var(--base_txt); }
+p, .experience_points li{ font-size:1.2rem; opacity:.7; font-family:var(--base_txt); }
 .section_heading .btn{ margin-top:50px }
 
 .about{ position:relative; }
@@ -156,7 +155,7 @@ footer{ background-color:var(--black); color:var(--white); padding:100px 0 }
 .footer .btn{ border:1px solid rgba(255,255,255,.2); border-radius:30px; padding:10px 40px; font-size:18px; font-family:var(--base_txt); color:var(--white); font-weight:400; margin-right:30px }
 .footer .btn:hover{ border-color:var(--white); opacity:.7 }
 .copyright{ margin-top:50px }
-.copyright span{ text-transform:uppercase; opacity:.5; font-size:.75rem }
+.copyright span{ text-transform:uppercase; opacity:.7; font-size:.75rem }
 .copyright div, .copyright a{ font-size:1rem; color:var(--white);}
 .copyright a{ padding:10px 0 10px 10px }
 .copyright a:hover{ opacity: .7}
@@ -165,16 +164,19 @@ footer{ background-color:var(--black); color:var(--white); padding:100px 0 }
 
 .qua_exp{ position:relative; margin-top:50px }
 .qua_exp h3 i{ width:50px; height:50px; line-height: 50px; background:var(--primary); color:var(--white); border-radius:100%; text-align:center; font-size:1.3rem  }
-.qua_exp li{ border-bottom:1px solid #ddd; padding:20px 0 }
-.qua_exp li:last-child{ border-bottom:0; padding-bottom:0 }
+.experience > ul > li, .education > ul > li{ border-bottom:1px solid #ddd; padding:20px 0 }
+.experience > ul > li:last-child, .education > ul > li:last-child{ border-bottom:0; padding-bottom:0 }
 .qua_exp h3, .qua_exp h4{ margin:5px 0 }
+.experience h4{display:flex; justify-content:space-between; align-items: center;}
 .qua_exp h5{ font-size: 1rem; }
-.qua_exp li h4 span{font-size: 14px; font-weight: 500; color: var(--vlack); opacity: .5; margin-bottom: 10px; font-family: var(--base_txt);}
+.qua_exp li h4 span{font-size: 14px; font-weight: 500; color: var(--vlack); opacity: .5; margin-bottom: 10px; font-family: var(--base_txt); font-style: italic;}
 .qua_exp li h4 span.present{color: var(--primary); opacity: 1}
-.qua_exp li p{ margin-bottom:0; font-size:90% }
+.qua_exp li p, .experience_points li{ margin-bottom:0; font-size:90% }
 .sticky{ position: absolute; height: 100%; width: 25%; right: 0; top: 0px; background:#d4e1e3 }
 .bg_full{ position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; color:var(--white); display: block; width: 100%;  top: 65px; overflow:hidden; border:10px solid #d4e1e3; }
 .small_rec{ width:75px; height:75px; top: 650px; position: absolute; left: -50px; z-index: 1; background:var(--primary); display:inline-block; display: none}
+.experience_points{ margin-left: 20px;}
+.experience_points li{ list-style: disc;}
 .qua_exp strong{ font-size: 90%; display: none}
 .qua_exp img{width:100%; margin:auto; }
 #myVideo {position: relative; left: 50%; top: 0; width: auto; height: calc(100vh - 70px); transform: translateX(-50%); }
@@ -216,7 +218,7 @@ footer{ background-color:var(--black); color:var(--white); padding:100px 0 }
 box-shadow: 15px 20px 81px 11px rgba(0,0,0,0.145);}*/
 .dropshadow img{ width:600px }
 .border-circle{ position:relative; }
-.border-circle:after{ content: ''; position:absolute; left:50%; top:30%; width:300px; aspect-ratio:1; border:2px dashed rgba(33,37,41, .21);#212529; display:inline-block; border-radius:100%; z-index:-1 }
+.border-circle:after{ content: ''; position:absolute; left:50%; top:30%; width:300px; aspect-ratio:1; border:2px dashed rgba(33,37,41, .21); display:inline-block; border-radius:100%; z-index:-1 }
 
 .main_img{ position:relative; margin-top:12% }
 .main_txt{ margin-top:calc(10% + 50px); color:var(--white); }
@@ -265,7 +267,7 @@ box-shadow: 15px 20px 81px 11px rgba(0,0,0,0.145);}*/
 .page-404 span span{ border-bottom:1px solid; }
 .page-404 h3{ font-size:20px; font-weight:500;color:#666; }
 .page-404 h5{font-size:64px; font-weight:800; line-height: 110%}
-.page-404 a{font-family: "Open Sans", sans-serif; font-size:16px; color:#313131; margin-top:50px; font-weight:  }
+.page-404 a{font-family: "Open Sans", sans-serif; font-size:16px; color:#313131; margin-top:50px;}
 .page-404 a span{ font-size:24px }
 .page-404 a:hover{ color:var(--primary); }
 .smart_shadow{box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;}
